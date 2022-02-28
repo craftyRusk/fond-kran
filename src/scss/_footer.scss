@@ -1,0 +1,24 @@
+ .footer {
+    background: url(/src/img/footer.svg) 70% -30%  no-repeat, linear-gradient(to top, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%);
+    
+    &-block {        
+        padding: calc(var(--module) * 6) var(--section-x-gutter) calc(var(--module) * 10);
+        max-width: var(--container-width);
+        width: 100%;
+        margin: 0 auto;        
+    }
+
+    &__copyright {
+        margin-top: calc(var(--module) * 11);
+    }
+}
+
+
+@media screen and (max-width: $screen-tablet) {
+    .footer {
+    
+        &__copyright {
+            margin-top: calc(var(--module) * 6);
+        }
+    }
+}

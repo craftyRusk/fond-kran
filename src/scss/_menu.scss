@@ -1,0 +1,28 @@
+.menu { 
+    margin: calc(var(--module) * 3.5) 0 0;
+    z-index: 100;
+
+    &-link {
+        display: flex;
+        flex-direction: column;
+
+        &__item {            
+            padding: calc(var(--module) * 0.5)  calc(var(--module) * 1.5) ;  
+
+            &_active {
+                background: #C4C4C4;                
+                padding: var(--module) calc(var(--module) * 1.5) ;  
+                border-radius: 18px;
+                width: max-content;
+            }
+        }
+    } 
+
+    &-contacts {        
+        margin: calc(var(--module) * 2.5)  calc(var(--module) * 1.5);
+    }
+
+    &-buttons {
+        margin: calc(var(--module) * 2) 0 0;
+    }
+}
