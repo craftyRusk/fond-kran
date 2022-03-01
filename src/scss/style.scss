@@ -43,8 +43,6 @@ body {
     }
 }
 
-
-
 .align-items-center {
     align-items: center!important;
 }
@@ -57,7 +55,6 @@ a {
 
 .link {          
     display: inline-block;     
-    // margin-bottom: var(--module);  
 
     &:hover {
         text-decoration: underline;
@@ -66,7 +63,6 @@ a {
     &_secondary {    
         font-size: 24px;
         color: var(--color-product);
-        margin-bottom: calc(var(--module) * 2); 
         
         &:hover {
             background-color: var(--color-black);
@@ -75,7 +71,7 @@ a {
     }
 
     &_bg {
-        padding: var(--module) calc(var(--module) * 4);  
+        padding: var(--module) calc(var(--module) * 12) var(--module) calc(var(--module) * 4);  
         background-image: url(../img/reports.svg);
         background-size: cover; 
 
@@ -84,10 +80,6 @@ a {
             opacity: 0.8;
         }   
     } 
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 }
 
 .button { 
@@ -99,7 +91,6 @@ a {
     border: 1px solid var(--color-black);
     background-color: transparent;
     border-radius: calc(var(--module) * 2.5);
-    margin: 0 0 calc(var(--module) * 2.5);
 
     &:hover {
         opacity: 0.8;
@@ -134,10 +125,6 @@ a {
             font-size: 24px;          
         }
     }
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 }
 
 .invert {
@@ -149,17 +136,21 @@ a {
     width: 100%;
      overflow: hidden;
 }
+.m-b-xsmall {
+    margin-bottom: calc(var(--module) * 2);
+}
 
 .m-b-small {
-    width: 100%;
+    margin-bottom: calc(var(--module) * 2.5);
+}
+
+.m-b-medium {
     margin-bottom: calc(var(--module) * 3);
 }
 
 .m-b-large {
-    width: 100%;
     margin-bottom: calc(var(--module) * 6);
 }
-
 
 
 @media screen and (max-width: $screen-desktop) {
@@ -181,8 +172,7 @@ a {
 
     .link {
         &_bg {
-            padding: calc(var(--module) * 0.8) calc(var(--module) * 6.4); 
-            margin-top: calc(var(--module) * 2);
+            padding: calc(var(--module) * 0.8) calc(var(--module) * 6.4);
         }
         
         &_secondary {    

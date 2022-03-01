@@ -13,12 +13,31 @@
     }
 }
 
+@media screen and (max-width: $screen-laptop) {
+    .footer {
+        background: linear-gradient(to top, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%);
+
+    }
+}
 
 @media screen and (max-width: $screen-tablet) {
     .footer {
+
+        &-block {
+            padding: calc(var(--module) * 3) var(--section-x-gutter) calc(var(--module) * 5);
+        }
     
         &__copyright {
             margin-top: calc(var(--module) * 6);
+        }
+    }
+}
+
+@media screen and (max-width: $screen-phone) {
+    .footer {
+
+        &__copyright {
+            margin-top: calc(var(--module) * 3);
         }
     }
 }

@@ -44,23 +44,45 @@
     <section class="section">
         <div class="section-block">
             <div class="row">
-                <div class="col-lg-3">
-                    <nav class="menu hidden-md-down">
-                        <div class="menu-link">
-                            <a class="menu-link__item" href="/">Главная</a>
-                            <a class="menu-link__item menu-link__item_active" href="/news">Новости</a>
-                            <a class="menu-link__item" href="/research">Исследования</a>
+                <aside class="col-lg-3">
+                    <div class="sidebar hidden-md-down">
+                        <nav>
+                            <ul class="menu">
+                                <li class="menu__item menu__item_active">
+                                    <a href="/" class="menu__link">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="/news" class="menu__link">
+                                        Новости
+                                    </a>
+                                </li>                                
+                                <li class="menu__item">
+                                    <a href="/research" class="menu__link">
+                                        Исследования
+                                    </a>
+                                </li>            
+                            </ul>
+                        </nav>
+                        <address class="sidebar-contacts">                            
+                            <div class="m-b-small">  
+                                <a href="tel:+7 123 456-78-90" class="link text-bold">+7&nbsp;123 456-78-90</a>
+                            </div>
+                            <div>
+                                <a href="mailto:mail@fond.ru;" class="link">mail@fond.ru</a>
+                            </div>
+                        </address>
+                        <div class="sidebar-buttons">
+                            <div class="m-b-small">                                
+                                <button type="button" class="button">Нужна помощь</button>
+                            </div>
+                            <div>                                
+                                <button type="button" class="button button_primary">Хочу помочь</button>
+                            </div>
                         </div>
-                        <div class="menu-contacts">
-                            <p class="text-bold">+7&nbsp;123 456-78-90</p>
-                            <a href="mailto:mail@fond.ru;">mail@fond.ru</a>
-                        </div>
-                        <div class="menu-buttons">
-                            <button class="button">Нужна помощь</button>
-                            <button class="button button_primary">Хочу помочь</button>
-                        </div>
-                    </nav>
-                </div>
+                    </div>
+                </aside>
                 <div class="col-lg-9">
                     <h1>Заголовок 1</h1>
                     <h2>Заголовок второго уровня</h2>
