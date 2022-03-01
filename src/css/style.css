@@ -1669,11 +1669,11 @@ blockquote {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../img/bg_card.svg);
-  background-size: cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
   z-index: 1;
 }
 .card__label {
+  position: relative;
   color: var(--color-black);
   -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
@@ -1814,7 +1814,7 @@ a {
   cursor: pointer;
   padding: var(--module) calc(var(--module) * 1.5);
   border: 1px solid var(--color-black);
-  background-color: var(--color-white);
+  background-color: transparent;
   border-radius: calc(var(--module) * 2.5);
   margin: 0 0 calc(var(--module) * 2.5);
 }

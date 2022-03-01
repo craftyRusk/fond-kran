@@ -23,13 +23,13 @@
             position: absolute;
             top: 0;      
             left: 0;   
-            background-image: url(../img/bg_card.svg);            
-            background-size: cover;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
             z-index: 1;
         }
     }
 
     &__label {  
+        position: relative;
         color: var(--color-black);
         -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
