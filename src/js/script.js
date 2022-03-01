@@ -7,9 +7,9 @@ $(document).ready(function () {
     });
 });
 
-initPageNavigation();
-initMobileMenu();
-initScrollAnimations();
+// initPageNavigation();
+// initMobileMenu();
+// initScrollAnimations();
 
 function initPageNavigation() {
     if (!'IntersectionObserver' in window) {

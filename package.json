@@ -7,6 +7,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "npm-run-all --parallel task:devserver \"task:sass -- -w\"",
+    "instal": "npm i",
     "build": "npm run task:sass && npm run task:postcss",
     "task:devserver": "serve",
     "task:sass": "sass src/scss:src/css --source-map-urls=relative",

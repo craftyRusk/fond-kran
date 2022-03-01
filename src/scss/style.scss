@@ -76,7 +76,7 @@ a {
 
     &_bg {
         padding: var(--module) calc(var(--module) * 4);  
-        background-image: url(/src/img/reports.svg);
+        background-image: url(../img/reports.svg);
         background-size: cover; 
 
         &:hover {
