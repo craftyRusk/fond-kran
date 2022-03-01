@@ -59,14 +59,29 @@
 }
 @media screen and (max-width: $screen-phone) {
     .section {
+
+        &_large {        
+            min-height: 426px; 
+        } 
+
+        &_xlarge {        
+            min-height: auto; 
+        }
         
         &_main {
+            padding-top: 0;
             background-image: url(../img/bg_main-m.png);
         }        
 
         &_invert {
             background-color: var(--color-black);
             color:var(--color-white);
+        }
+
+        &-block {
+            &__large-top {
+                padding-top: calc(var(--module) * 5);
+            }
         }
     }
 }

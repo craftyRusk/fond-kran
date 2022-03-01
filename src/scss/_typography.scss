@@ -96,3 +96,19 @@ blockquote {
         font-size: 24px;
     }
 }
+
+@media screen and (max-width: $screen-phone) {
+    h1, .h1 {
+        margin: calc(var(--module) * 2) 0;
+    }
+    
+    .lead {
+        font-size: 20px;
+        margin: 0 0 calc(var(--module) * 2) ;
+    }
+
+    .quote {
+        font-size: 14px;
+    }
+
+}

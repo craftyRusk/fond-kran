@@ -19,7 +19,6 @@ $screen-phone           : 375px;
     --header-height: 85px;
 }
 
-
 @media screen and (max-width: $screen-tablet) {
     :root {  
         --heading-1: 56px;
@@ -31,7 +30,9 @@ $screen-phone           : 375px;
     :root {  
         --font-size: 14px;   
         --heading-1: 32px;
-        --heading-2: 32px;   
+        --heading-2: 28px;  
+        --heading-3: 24px;  
+        --heading-4: 20px; 
     }
 }
 

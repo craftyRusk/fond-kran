@@ -8,6 +8,7 @@
 @import "_section";
 @import "_card";
 @import "_sidebar";
+@import "_button";
 
 html {
     -ms-text-size-adjust: 100%;
@@ -82,51 +83,6 @@ a {
     } 
 }
 
-.button { 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: var(--module) calc(var(--module) * 1.5);  
-    border: 1px solid var(--color-black);
-    background-color: transparent;
-    border-radius: calc(var(--module) * 2.5);
-
-    &:hover {
-        opacity: 0.8;
-    } 
-
-    &_primary {
-        border: none;         
-        background-color: var(--color-product);
-        color: var(--color-white);
-    }
-
-    &_secondary {
-        border: 2px solid var(--color-product);         
-        background-color: var(--color-white);
-        color: var(--color-white);
-        color: var(--color-product); 
-    }
-
-    &_white {
-        border: none;         
-        background-color: var(--color-white);
-        color: var(--color-product);    
-    }
-
-    &_large {
-        padding: calc(var(--module) * 4) calc(var(--module) * 4.5); 
-        font-weight: 700;  
-        border-radius: calc(var(--module) * 5);
-
-        &-x {   
-            padding: calc(var(--module) * 3.5) calc(var(--module) * 4); 
-            font-size: 24px;          
-        }
-    }
-}
-
 .invert {
     color: var(--color-white);
 }
@@ -152,13 +108,18 @@ a {
     margin-bottom: calc(var(--module) * 6);
 }
 
+.bg-programm {
+    background-image: url(../img/bg_programm.png);
+    background-repeat: no-repeat;
+    background-position: 100% top;
+    background-size: auto 100%;
+}
 
-@media screen and (max-width: $screen-desktop) {
-    .button { 
-        &_large {
-            padding: calc(var(--module) * 3) calc(var(--module) * 3);
-        }  
-    }
+.bg-volunteers {
+    background-image: url(..//img/bg_volunteers.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 
 @media screen and (max-width: $screen-tablet) {
@@ -179,4 +140,27 @@ a {
             font-size: 20px;
         }       
     }   
+}
+
+@media screen and (max-width: $screen-phone) {
+    .bg-programm  {
+        background: none;
+    }
+
+    .bg-volunteers {
+        background-position: 67% top;
+        min-height: 800px;
+    }
+
+    .m-b-large {
+        margin-bottom: calc(var(--module) * 2);
+    }
+
+    .m-t-large {
+        margin-top: calc(var(--module) * 2);
+    }
+
+    .m-t-xxlarge {
+        margin-top: calc(var(--module) * 23);
+    }
 }
