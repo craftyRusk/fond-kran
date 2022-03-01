@@ -3,7 +3,7 @@
     flex-direction: column;
 
     &_main {
-        background-image: url(/src/img/bg_main.png);
+        background-image: url(../img/bg_main.png);
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;       
@@ -61,7 +61,7 @@
     .section {
         
         &_main {
-            background-image: url(/src/img/bg_main-m.png);
+            background-image: url(../img/bg_main-m.png);
         }        
 
         &_invert {

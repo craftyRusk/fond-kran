@@ -21,11 +21,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="src/css/style.css?v=4">
 
-    <script src="/src/js/sticky.min.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/sticky.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -34,10 +35,13 @@
         <div class="header-block">
             <div class="row align-items-center">
                 <div class="col-sm-4 col-lg-3">
-                    <img class="image" src="src/img/logo.svg" alt="Фонд КРАН">
+                    <a href="/">
+                        <img class="image" src="/src/img/logo.svg" alt="Фонд КРАН">
+                    </a>  
+                    <!-- <button type="button" class="burger"></button> -->
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <p class="t-small">Фонд содействия когнетивному развитию и&nbsp;нейрореабилитации</p>
+                    <p class="t-small">Фонд содействия когнетивному развитию и&nbsp;нейрореабилитации</p>                    
                 </div>
             </div>
         </div>
@@ -65,42 +69,60 @@
         </div>
     </section>
 
-    <script>
-        var sticky = new Sticky('.menu');
-
-        $(document).ready(function () {
-            $('.menu-link__item').click(function () {
-                $('.menu-link__item.menu-link__item_active').removeClass('menu-link__item_active');
-                $(this).addClass('menu-link__item_active');
-            });
-        });
-    </script>
-    
-
     <section class="section" id="about">
         <div class="section-block section-block__large-top">
             <div class="row">
-                <div class="col-lg-3">
-                    <nav class="menu hidden-md-down">
-                        <div class="menu-link">
-                            <a class="menu-link__item menu-link__item_active" href="#about">О&nbsp;фонде</a>
-                            <a class="menu-link__item" href="#news">Новости</a>
-                            <a class="menu-link__item" href="#research">Исследования</a>
-                            <a class="menu-link__item" href="#programm">Наши программы</a>
-                            <a class="menu-link__item" href="#volunteers">Волонтерам</a>
-                            <a class="menu-link__item" href="#help">Нам помогают</a>
-                            <a class="menu-link__item" href="#contact">Контакты</a>
+                <aside class="col-lg-3">
+                    <div class="sidebar hidden-md-down">
+                        <nav>
+                            <ul class="menu">
+                                <li class="menu__item menu__item_active">
+                                    <a href="#about" class="menu__link">
+                                        О&nbsp;фонде
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#news" class="menu__link">
+                                        Новости
+                                    </a>
+                                </li>                                
+                                <li class="menu__item">
+                                    <a href="#research" class="menu__link">
+                                        Исследования
+                                    </a>
+                                </li>                                                             
+                                <li class="menu__item">
+                                    <a href="#programm" class="menu__link">
+                                        Наши программы
+                                    </a>
+                                </li>                                                                                         
+                                <li class="menu__item">
+                                    <a href="#volunteers" class="menu__link">
+                                        Волонтерам
+                                    </a>
+                                </li>                                                                                                                           
+                                <li class="menu__item">
+                                    <a href="#help" class="menu__link">
+                                        Нам помогают
+                                    </a>
+                                </li>                                                                                                                  
+                                <li class="menu__item">
+                                    <a href="#contact" class="menu__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <address class="sidebar-contacts">
+                            <a href="tel:+7 123 456-78-90" class="link text-bold">+7&nbsp;123 456-78-90</a>
+                            <a href="mailto:mail@fond.ru;" class="link">mail@fond.ru</a>
+                        </address>
+                        <div class="sidebar-buttons">
+                            <button type="button" class="button">Нужна помощь</button>
+                            <button type="button" class="button button_primary">Хочу помочь</button>
                         </div>
-                        <div class="menu-contacts">
-                            <p class="text-bold">+7&nbsp;123 456-78-90</p>
-                            <a href="mailto:mail@fond.ru;">mail@fond.ru</a>
-                        </div>
-                        <div class="menu-buttons">
-                            <button class="button">Нужна помощь</button>
-                            <button class="button button_primary">Хочу помочь</button>
-                        </div>
-                    </nav>
-                </div>
+                    </div>
+                </aside>
                 <div class="col-lg-9">
                     <h2 class="h1">О&nbsp;фонде</h2>
                     <p class="lead">Каждый год с&nbsp;тысячами детей и&nbsp;молодых людей случаются
@@ -151,7 +173,7 @@
                         <div class="col-sm-4">
                             <a class="card card__image" href="#" style="background-image: url(/src/img/news_1.png);">
                                 <div class="card-content">
-                                    <p>10.02.2022</p>
+                                    <p><time>10.02.2022</time></p>
                                     <h4>Заголовок новости</h4>
                                 </div>
                             </a>
@@ -160,7 +182,7 @@
                         <div class="col-sm-4">
                             <a class="card card__image" href="#" style="background-image: url(/src/img/news_2.png);">
                                 <div class="card-content">
-                                    <p>11.02.2022</p>
+                                    <p><time>11.02.2022</time></p>
                                     <h4>Еще одна новость, еще один заголовок новости</h4>
                                 </div>
                             </a>
@@ -169,7 +191,7 @@
                         <div class="col-sm-4">
                             <a class="card card__image" href="#" style="background-image: url(/src/img/news_3.png);">
                                 <div class="card-content">
-                                    <p>10.02.2022</p>
+                                    <p><time>10.02.2022</time></p>
                                     <h4>Заголовок новости</h4>
                                 </div>
                             </a>
@@ -180,7 +202,7 @@
                         <div class="col-sm-4">
                             <a class="card card__white" href="#">
                                 <div class="card-content">
-                                    <p>10.02.2022</p>
+                                    <p><time>10.02.2022</time></p>
                                     <h4>Заголовок новости на&nbsp;белом фоне, когда подходящей картинки не&nbsp;нашлось
                                     </h4>
                                 </div>
@@ -190,14 +212,14 @@
                         <div class="col-sm-4">
                             <a class="card" href="#" style="background-image: url(/src/img/news_5.png);">
                                 <div class="card-content">
-                                    <p>10.02.2022</p>
+                                    <p><time>10.02.2022</time></p>
                                     <h4>Заголовок новости</h4>
                                 </div>
                             </a>
                         </div>
 
-                        <div class="col-sm-4">
-                            <a class="button button_secondary button_large" href="#">Все новости</a>
+                        <div class="col-sm-4 text-center">
+                            <a class="button button_secondary button_large" href="/news">Все новости</a>
                         </div>
                     </div>
 
@@ -214,9 +236,9 @@
 
                     <div class="row align-items-center">
                         <div class="col-sm-4">
-                            <a class="card" href="#" style="background-image: url(/src/img/research_orange.svg);">
+                            <a class="card" href="#">
                                 <div class="card-content">
-                                    <p>10.02.2022</p>
+                                    <p><time>10.02.2022</time></p>
                                     <h4>Заголовок исследования</h4>
                                 </div>
                                 <div class="card__label">
@@ -229,7 +251,7 @@
                             <a class="card card__image" href="#"
                                 style="background-image: url(/src/img/research_2.png);">
                                 <div class="card-content">
-                                    <p>10.02.2022</p>
+                                    <p><time>10.02.2022</time></p>
                                     <h4>Исследование в&nbsp;области когнетивного развития и&nbsp;нейрореабили-тации</h4>
                                 </div>
                                 <div class="card__label">
@@ -241,7 +263,7 @@
                         <div class="col-sm-4">
                             <a class="card" href="#" style="background-image: url(/src/img/research_black.svg);">
                                 <div class="card-content">
-                                    <p>10.02.2022</p>
+                                    <p><time>10.02.2022</time></p>
                                     <h4>Заголовок исследования</h4>
                                 </div>
                                 <div class="card__label">
@@ -256,7 +278,7 @@
                             <a class="card card__image" href="#"
                                 style="background-image: url(/src/img/research_4.png);">
                                 <div class="card-content">
-                                    <p>10.02.2022</p>
+                                    <p><time>10.02.2022</time></p>
                                     <h4>Исследование в&nbsp;области когнетивного развития и&nbsp;нейрореабили-тации</h4>
                                 </div>
                                 <div class="card__label">
@@ -268,7 +290,7 @@
                         <div class="col-sm-4">
                             <a class="card" href="#" style="background-image: url(/src/img/research_gray.svg);">
                                 <div class="card-content">
-                                    <p>10.02.2022</p>
+                                    <p><time>10.02.2022</time></p>
                                     <h4>Заголовок исследования</h4>
                                 </div>
                                 <div class="card__label">
@@ -277,8 +299,8 @@
                             </a>
                         </div>
 
-                        <div class="col-sm-4">
-                            <a class="button button_secondary button_large" href="#">Все исследования</a>
+                        <div class="col-sm-4 text-center">
+                            <a class="button button_secondary button_large" href="/research">Все исследования</a>
                         </div>
                     </div>
 
@@ -346,62 +368,63 @@
 
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="m-b-large">
+                            <article class="m-b-large">
                                 <img class="image" src="/src/img/help_hristorozhdenstvenskij.png">
-                                <p class="text-bold">Константин
-                                    Христорожденственский</p>
-                                <p><i>Я&nbsp;восхищаюсь теми людьми,
+                                <h3 class="p text-bold">Константин
+                                    Христорожденственский</h3>
+                                <blockquote>Я&nbsp;восхищаюсь теми людьми,
                                         которые сделали эту работу
                                         своей профессией,
                                         и&nbsp;с&nbsp;удовольствием с&nbsp;ними
                                         сотрудничаю, получая н
                                         еповторяемые ощущения,
-                                        навыки и&nbsp;знания.</i></p>
-                            </div>
+                                        навыки и&nbsp;знания.</blockquote>
+                            </article>
 
-                            <div class="m-b-large">
+                            <article class="m-b-large">
                                 <img class="image" src="/src/img/help_hello.png">
                                 <p>Журнал HELLO, оказывает
                                     мощную инфомационную
                                     поддержку Фонда с
                                     первого
                                     дня.</p>
-                            </div>
+                            </article>
                         </div>
 
                         <div class="col-sm-4">
-                            <div class="m-b-large">
+                            <article class="m-b-large">
                                 <img class="image" src="/src/img/help_ahmad.png">
                                 <p>Чай &laquo;Ахмад&raquo; по&nbsp;традиции
                                     предоставляет напитки
                                     на&nbsp;мероприятиях фонда.</p>
-                            </div>
+                            </article>
 
-                            <div class="m-b-large">
+                            <article class="m-b-large">
                                 <img class="image" src="/src/img/help_Kolesnikova.png">
-                                <p class="text-bold">Александра Колесникова</p>
-                                <p><i>Общение с&nbsp;этими детьми
+                                <h3 class="p text-bold">Александра Колесникова</h3>
+                                <blockquote>Общение с&nbsp;этими детьми
                                         всегда вызывает массу
                                         положительных эмоций,
                                         и&nbsp;каждая встреча является
                                         особенной! Каждый
                                         ребенок&nbsp;&mdash; это цветок жизни,
                                         который нуждается
-                                        в&nbsp;правильном уходе.</i></p>
-                            </div>
+                                        в&nbsp;правильном уходе.</blockquote>
+                            </article>
                         </div>
 
                         <div class="col-sm-4">
-                            <div class="m-b-large">
+                            <article class="m-b-large">
                                 <img class="image" src="/src/img/help_mihelson.png">
-                                <p class="text-bold">Конрад Михельсон</p>
-                                <p><i>Первая встреча с&nbsp;детьми
+                                <h3 class="p text-bold">Конрад Михельсон</h3>
+                                <blockquote>Первая встреча с&nbsp;детьми
                                         изменила и&nbsp;меня саму, и&nbsp;моё
                                         прежнее представление
                                         о&nbsp;помощи детям, лишённых
-                                        родителей и&nbsp;семьи.</i></p>
-                            </div>
-                            <div class="m-b-large">
+                                        родителей и&nbsp;семьи.</blockquote>
+                            </article>
+
+                            <article class="m-b-large">
                                 <img class="image" src="/src/img/help_folksvagen.png">
                                 <p>&laquo;Фольксваген
                                     Коммерческие
@@ -409,7 +432,7 @@
                                     бесплатно предоставлял
                                     транспорт и&nbsp;водителей
                                     на&nbsp;мероприятия Фонда.</p>
-                            </div>
+                            </article>
                         </div>
                     </div>
 
@@ -429,8 +452,8 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-3">
                             <h3>Наш адрес</h3>
-                            <p>Ул.&nbsp;Пржевальского, 12, оф.&nbsp;1000<br>
-                                Москва, 123456</p>
+                            <address class="p">Ул.&nbsp;Пржевальского, 12, оф.&nbsp;1000<br>
+                                Москва, 123456</address>
                         </div>
                         <div class="col-md-6 offset-lg-2">
                             <h3>Мы&nbsp;в&nbsp;социальных сетях</h3>
@@ -463,100 +486,6 @@
         </div>
     </footer>
 
-    <script>
-        initPageNavigation();
-        initMobileMenu();
-        initScrollAnimations();
-
-        function initPageNavigation() {
-            if (!'IntersectionObserver' in window) {
-                return;
-            }
-
-            const navItems = document.querySelectorAll('[data-navigation-link]');
-            const sections = document.querySelectorAll('[data-navigation-section]');
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px 0px -400px',
-                threshold: 0,
-            };
-            const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-            [].forEach.call(sections, (section) => observer.observe(section));
-
-            function observerCallback(entries) {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        const hash = '#' + entry.target.id;
-                        const activeNavItem = document.querySelector('[href="' + hash + '"]');
-
-                        [].forEach.call(navItems, (item) => {
-                            if (item === activeNavItem) {
-                                item.classList.add('active');
-                                // updateHistory(hash);
-                                return;
-                            }
-                            item.classList.remove('active');
-                        });
-                    }
-                });
-            }
-
-            function updateHistory(hash) {
-                if (window.location.hash === hash) {
-                    return;
-                }
-                if (location.hash !== '') {
-                    history.pushState({}, window.title, hash);
-                    return;
-                }
-                history.replaceState({}, window.title, hash);
-            }
-        }
-
-        function initMobileMenu() {
-            const button = document.querySelector('[data-nav-burger]');
-            const menu = document.querySelector('[data-nav-menu]');
-            const menuLinks = menu.querySelectorAll('a');
-
-            button.addEventListener('click', () => menu.classList.toggle('active'));
-
-            [].forEach.call(menuLinks, (link) => {
-                link.addEventListener('click', () => {
-                    setTimeout(() => menu.classList.remove('active'), 300);
-                });
-            });
-        }
-
-        function initScrollAnimations() {
-            if (!'IntersectionObserver' in window) {
-                return;
-            }
-
-            const observerElements = document.querySelectorAll('[data-animate]');
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px 0px',
-                threshold: 0,
-            };
-            const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-            [].forEach.call(observerElements, (element) => observer.observe(element));
-
-            function observerCallback(entries) {
-                entries.forEach(entry => {
-                    const animateEl = entry.target;
-
-                    if (entry.intersectionRatio > 0) {
-                        animateEl.classList.remove('will-animate');
-                        observer.unobserve(entry.target);
-                        return;
-                    }
-                    animateEl.classList.add('will-animate');
-                });
-            }
-        }
-    </script>
 </body>
 
 </html>

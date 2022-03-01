@@ -38,13 +38,20 @@ h4, .h4 {
     }
 }
 
-p {
+p, .p {
     font-size: var(--font-size);
     margin: 0 0 calc(var(--module) * 2);
+    font-style: normal;
     
     &:last-child {
         margin-bottom: 0;
     }  
+}
+
+blockquote {
+    font-size: var(--font-size); 
+    font-style: italic;
+    margin: 0;
 }
 
 .t-small {
@@ -74,6 +81,10 @@ p {
 
 .text-bold {
     font-weight: 700; 
+}
+
+.text-center {
+    text-align: center;
 }
 
 @media screen and (max-width: $screen-tablet) {
