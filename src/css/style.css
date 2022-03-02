@@ -1765,6 +1765,7 @@ blockquote {
 .menu {
   display: flex;
   flex-direction: column;
+  min-height: calc(var(--module) * 21.5);
   padding: 0;
   margin: 0;
   list-style: none;
