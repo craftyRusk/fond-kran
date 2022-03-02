@@ -34,13 +34,21 @@
     <header class="header">
         <div class="header-block">
             <div class="row align-items-center">
-                <div class="col-sm-4 col-lg-3">
-                    <a href="/">
-                        <img class="image" src="src/img/logo.svg" alt="Фонд КРАН">
-                    </a>  
-                    <!-- <button type="button" class="burger"></button> -->
+                <div class="col-lg-3">
+                    <div class="justify-content-beetwen align-items-center">
+                        <a href="/">
+                            <img class="header-logo" src="src/img/logo.svg" alt="Фонд КРАН">
+                        </a>                      
+                        <button class="header__burger" aria-label="Меню" data-nav-burger="">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="19" height="1" fill="black"/>
+                                <rect y="7" width="19" height="1" fill="black"/>
+                                <rect y="14" width="19" height="1" fill="black"/>
+                                </svg>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-lg-4 col-xl-3">
                     <p class="t-small">Фонд содействия когнетивному развитию и&nbsp;нейрореабилитации</p>                    
                 </div>
             </div>
@@ -50,8 +58,16 @@
     <section class="section section_main section_large section_invert">
         <div class="section-block">
             <div class="row">
-                <div class="col-lg-8 offset-lg-3">
+                <div class="col-11 col-lg-8 offset-lg-3">
                     <h1>Строим мышление и&nbsp;поднимаем интеллект!</h1>
+                    <div class="hidden-md-up">
+                        <div class="m-b-large">                                
+                            <button type="button" class="button button_invert">Нужна помощь</button>
+                        </div>
+                        <div>                                
+                            <button type="button" class="button button_primary">Хочу помочь</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,45 +85,45 @@
         </div>
     </section>
 
-    <section class="section" id="about">
+    <section class="section" id="about" data-navigation-section>
         <div class="section-block section-block__large-top">
             <div class="row">
                 <aside class="col-lg-3">
-                    <div class="sidebar hidden-md-down">
+                    <div class="sidebar" data-nav-menu>
                         <nav>
                             <ul class="menu">
-                                <li class="menu__item menu__item_active">
-                                    <a href="#about" class="menu__link">
+                                <li class="menu__item">
+                                    <a href="#about" class="menu__link" data-navigation-link>
                                         О&nbsp;фонде
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#news" class="menu__link">
+                                    <a href="#news" class="menu__link" data-navigation-link>
                                         Новости
                                     </a>
                                 </li>                                
                                 <li class="menu__item">
-                                    <a href="#research" class="menu__link">
+                                    <a href="#research" class="menu__link" data-navigation-link>
                                         Исследования
                                     </a>
                                 </li>                                                             
                                 <li class="menu__item">
-                                    <a href="#programm" class="menu__link">
+                                    <a href="#programm" class="menu__link" data-navigation-link>
                                         Наши программы
                                     </a>
                                 </li>                                                                                         
                                 <li class="menu__item">
-                                    <a href="#volunteers" class="menu__link">
+                                    <a href="#volunteers" class="menu__link" data-navigation-link>
                                         Волонтерам
                                     </a>
                                 </li>                                                                                                                           
                                 <li class="menu__item">
-                                    <a href="#help" class="menu__link">
+                                    <a href="#help" class="menu__link" data-navigation-link>
                                         Нам помогают
                                     </a>
                                 </li>                                                                                                                  
                                 <li class="menu__item">
-                                    <a href="#contact" class="menu__link">
+                                    <a href="#contact" class="menu__link" data-navigation-link>
                                         Контакты
                                     </a>
                                 </li>
@@ -173,7 +189,7 @@
         </div>
     </section>
 
-    <section class="section" id="news">
+    <section class="section" id="news" data-navigation-section>
         <div class="section-block">
             <div class="row">
                 <div class="col-lg-9 offset-lg-3">
@@ -236,7 +252,7 @@
         </div>
     </section>
 
-    <section class="section" id="research">
+    <section class="section" id="research" data-navigation-section>
         <div class="section-block">
             <div class="row">
                 <div class="col-lg-9 offset-lg-3">
@@ -315,7 +331,7 @@
         </div>
     </section>
 
-    <section class="section section_xlarge" id="programm">
+    <section class="section section_xlarge" id="programm" data-navigation-section>
         <div class="section-block">
             <div class="row">
                 <div class="col-lg-9 offset-lg-3">
@@ -326,17 +342,17 @@
 
                     <div class="row h-100 m-b-large bg-programm">
                         <div class="col-lg-6">
-                            <div class="m-b-xsmall">                    
-                                <a href="#" class="link link_secondary">Нейропсихологическая реабилитация</a>
+                            <div class="m-b-xsmall">         
+                                <button type="button" data-dialog-open="rehab" class="button button_link">Нейропсихологическая реабилитация</button>
                             </div>
                             <div class="m-b-xsmall">
-                                <a href="#" class="link link_secondary">Интеграция в&nbsp;социальную среду</a>
+                                <button type="button" data-dialog-open="integration" class="button button_link">Интеграция в&nbsp;социальную среду</button>
                             </div>
                             <div class="m-b-xsmall">
-                                <a href="#" class="link link_secondary">+1&nbsp;балл к&nbsp;учебе</a>
+                                <button type="button" data-dialog-open="study" class="button button_link">+1&nbsp;балл к&nbsp;учебе</button>
                             </div>
                             <div class="m-b-xsmall">
-                                <a href="#" class="link link_secondary">Новые методики повышения интеллекта</a>
+                                <button type="button" data-dialog-open="methods" class="button button_link">Новые методики повышения интеллекта</button>
                             </div>
                         </div>
                     </div>
@@ -346,7 +362,7 @@
         </div>
     </section>
 
-    <section class="section section_xlarge section_invert bg-volunteers" id="volunteers">
+    <section class="section section_xlarge section_invert bg-volunteers" id="volunteers" data-navigation-section>
 
         <div class="section-block section-block__large-top">
             <div class="row">
@@ -366,7 +382,7 @@
         </div>
     </section>
 
-    <section class="section" id="help">
+    <section class="section" id="help" data-navigation-section>
         <div class="section-block section-block__large-top">
             <div class="row">
                 <div class="col-lg-9 offset-lg-3">
@@ -450,7 +466,7 @@
         </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section" id="contact" data-navigation-section>
         <div class="section-block">
             <div class="row">
                 <div class="col-lg-9 offset-lg-3">
@@ -500,6 +516,61 @@
             </div>
         </div>
     </footer>
+
+    <dialog data-dialog="rehab">
+        <form method="dialog" class="dialog-close-form">
+            <button type="submit" class="dialog-close-button" aria-label="Close Dialog">
+                <svg width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" role="img">
+                    <path d="M0.939335 10.9393C0.35355 11.5251 0.35355 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939335 10.9393ZM62 10.5L2 10.5V13.5L62 13.5V10.5Z" fill="currentColor"/>
+                </svg>
+                &emsp;Назад    
+            </button>
+        </form>
+        
+        <div class="row">
+            <div class="col-md-9 offset-md-3">
+                <h2>Нейропсихологическая 
+                    реабилитация</h2>
+                <p class="lead">Высокотехнологичные аппаратные методы повышения уровня внимания, рабочей памяти,
+                    управляющих функций. Психологическое репетиторство при академической неуспеваемости. </p>
+
+                <div class="row">
+                    <div class="col-lg-8">
+
+                        <h3>Заголовок третьего уровня</h3>
+                        <p>Консультация невролога, сомнолога, нутрициолога. Реализация индивидуальной поведенческой
+                            и
+                            коммуникативной программы. Коррекция двигательной диспраксии.</p>
+
+                        <h3>Реабилитация детей после опухоли мозга</h3>
+                        <p>Консультации онколога, невролога, реабилитолога. Двигательная реабилитация мозжечковой
+                            атаксии. Курс
+                            аппаратной нейрокогнитивной коррекции и механотерапии.</p>
+
+                        <h3>Реабилитация после комы и нейротравмы</h3>
+                        <p>Консультации невролога и реабилитолога. Коррекция двигательной диспраксии. Аппаратная
+                            нейрокогнитивная коррекция и механотрепаия. Тренировка ритмического праксиса.</p>
+
+                        <h3>Малые когнитивные расстройства и последствия ковида</h3>
+                        <p>Консультации невролога, реабилитолога, нейропсихолога. Коррекция когнитиных функций в
+                            малых группах
+                            методами моторного и графомоторного тренинга, индивидуальные репитиционные программы.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </dialog>
+
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.5.6/dialog-polyfill.min.js"
+        integrity="sha512-qUIG93zKzcLBVD5RGRbx2PBmbVRu+tJIl+EPLTus0z8I1AMru9sQYdlf6cBacSzYmZVncB9rcc8rYBnazqgrxA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
 
 </body>
 
