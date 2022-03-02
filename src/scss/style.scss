@@ -9,6 +9,7 @@
 @import "_card";
 @import "_sidebar";
 @import "_button";
+@import "_dialog";
 
 html {
     -ms-text-size-adjust: 100%;
@@ -48,6 +49,11 @@ body {
     align-items: center!important;
 }
 
+.justify-content-beetwen {
+    display: flex;
+    justify-content: space-between;
+}
+
 a {
   color: var(--color-black); 
   text-decoration: none;
@@ -64,11 +70,6 @@ a {
     &_secondary {    
         font-size: 24px;
         color: var(--color-product);
-        
-        &:hover {
-            background-color: var(--color-black);
-            text-decoration: none;
-        }
     }
 
     &_bg {
@@ -77,7 +78,6 @@ a {
         background-size: cover; 
 
         &:hover {
-            background-color: unset;
             opacity: 0.8;
         }   
     } 

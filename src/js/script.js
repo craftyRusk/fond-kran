@@ -1,15 +1,30 @@
-var sticky = new Sticky('.sidebar');
+document.addEventListener("DOMContentLoaded", () => {
+    dialogOpen();    
 
-$(document).ready(function () {
-    $('.menu__item').click(function () {
-        $('.menu__item.menu__item_active').removeClass('menu__item_active');
-        $(this).addClass('menu__item_active');
-    });
+    if (window.screen.width >= 991) {
+        const sticky = new Sticky('.sidebar');
+    }
+    
+    initPageNavigation();
+    initMobileMenu();
+    // initScrollAnimations();
 });
 
-// initPageNavigation();
-// initMobileMenu();
-// initScrollAnimations();
+function dialogOpen() {
+    const dialogs = document.querySelectorAll('[data-dialog]');
+    dialogs.forEach((element) => {
+        dialogPolyfill.registerDialog(element);
+    })
+    
+    document.querySelectorAll('[data-dialog-open]').forEach((el) => {
+        el.addEventListener('click', () => {       
+            const dialogId = el.getAttribute('data-dialog-open');
+            const dialog = document.querySelector(`[data-dialog="${dialogId}"]`);
+            dialog.showModal();
+        });
+    })
+
+}
 
 function initPageNavigation() {
     if (!'IntersectionObserver' in window) {
@@ -18,6 +33,7 @@ function initPageNavigation() {
 
     const navItems = document.querySelectorAll('[data-navigation-link]');
     const sections = document.querySelectorAll('[data-navigation-section]');
+    
     const observerOptions = {
         root: null,
         rootMargin: '0px 0px -400px',
@@ -35,11 +51,11 @@ function initPageNavigation() {
 
                 [].forEach.call(navItems, (item) => {
                     if (item === activeNavItem) {
-                        item.classList.add('active');
+                        item.classList.add('menu__link_active');
                         // updateHistory(hash);
                         return;
                     }
-                    item.classList.remove('active');
+                    item.classList.remove('menu__link_active');
                 });
             }
         });
@@ -62,11 +78,11 @@ function initMobileMenu() {
     const menu = document.querySelector('[data-nav-menu]');
     const menuLinks = menu.querySelectorAll('a');
 
-    button.addEventListener('click', () => menu.classList.toggle('active'));
+    button.addEventListener('click', () => menu.classList.toggle('sidebar_active'));
 
     [].forEach.call(menuLinks, (link) => {
         link.addEventListener('click', () => {
-            setTimeout(() => menu.classList.remove('active'), 300);
+            setTimeout(() => menu.classList.remove('sidebar_active'), 300);
         });
     });
 }

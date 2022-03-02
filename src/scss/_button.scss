@@ -31,6 +31,25 @@
         color: var(--color-product);    
     }
 
+    &_invert {      
+        border: 1px solid var(--color-white);
+        color: var(--color-white);    
+    }
+
+    &_link {  
+        font-size: 24px;
+        color: var(--color-product);
+        border: none;
+        border-radius: unset;
+        text-align: left;
+        padding: 0;
+        
+        &:hover {
+            background-color: var(--color-black);
+            text-decoration: none;
+        }
+    }
+
     &_large {
         padding: calc(var(--module) * 4) calc(var(--module) * 4.5); 
         font-weight: 700;  

@@ -35,38 +35,50 @@
     <header class="header">
         <div class="header-block">
             <div class="row align-items-center">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="image" src="src/img/logo.svg" alt="Фонд КРАН">
+                <div class="col-lg-3">
+                    <div class="justify-content-beetwen align-items-center">
+                        <a href="/">
+                            <img class="header-logo" src="src/img/logo.svg" alt="Фонд КРАН">
+                        </a>                      
+                        <button class="header__burger" aria-label="Меню" data-nav-burger="">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="19" height="1" fill="black"/>
+                                <rect y="7" width="19" height="1" fill="black"/>
+                                <rect y="14" width="19" height="1" fill="black"/>
+                                </svg>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <p class="t-small">Фонд содействия когнетивному развитию и&nbsp;нейрореабилитации</p>
+                <div class="col-lg-4 col-xl-3">
+                    <p class="t-small">Фонд содействия когнетивному развитию и&nbsp;нейрореабилитации</p>                    
                 </div>
             </div>
         </div>
     </header>
 
+
     <section class="section">
         <div class="section-block">
             <div class="row">
                 <aside class="col-lg-3">
-                    <div class="sidebar hidden-md-down">
+                    <div class="sidebar" data-nav-menu>
                         <nav>
                             <ul class="menu">
                                 <li class="menu__item">
-                                    <a href="/" class="menu__link">
+                                    <a href="/" class="menu__link" data-navigation-link>
                                         Главная
                                     </a>
                                 </li>
-                                <li class="menu__item menu__item_active">
-                                    <a href="/news" class="menu__link">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link menu__link_active" data-navigation-link>
                                         Новости
                                     </a>
                                 </li>                                
                                 <li class="menu__item">
-                                    <a href="/research" class="menu__link">
+                                    <a href="/" class="menu__link" data-navigation-link>
                                         Исследования
                                     </a>
-                                </li>            
+                                </li>     
                             </ul>
                         </nav>
                         <address class="sidebar-contacts">                            
