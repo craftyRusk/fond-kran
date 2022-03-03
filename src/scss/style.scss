@@ -92,11 +92,11 @@ a {
     color: var(--color-white);
 }
 
-.map {
+ymaps[id^="ymaps"] { 
     margin-top: calc(var(--module) * 4.5);
-    width: 100%;
-     overflow: hidden;
+    max-width: 100%;
 }
+
 .m-b-xsmall {
     margin-bottom: calc(var(--module) * 2);
 }
