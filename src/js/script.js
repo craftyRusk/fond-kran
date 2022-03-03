@@ -5,6 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
     initScrollAnimations();
 });
 
+let ok = false;                    
+window.addEventListener('scroll', function() {
+    if (ok === false) {
+        ok = true;    
+        setTimeout(() => {                    
+            let script = document.createElement('script');
+            script.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa33167d6a5ad01d3df9149c8df9021fc2f061bd0957b4fb627403944276120e2&amp;width=825&amp;height=520&amp;lang=ru_RU&amp;scroll=false';
+            document.getElementById('map').replaceWith(script);                        
+        }, 500)    
+    }
+});
+
 function dialogOpen() {
     const dialogs = document.querySelectorAll('[data-dialog]');
     dialogs.forEach((element) => {
