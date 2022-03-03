@@ -25,9 +25,7 @@
 
     <link rel="stylesheet" href="src/css/style.css?v=4">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="src/js/sticky.min.js"></script>
-    <script src="src/js/script.js"></script>
+    <script src="src/js/script.js" defer></script>
 </head>
 
 <body>
@@ -56,10 +54,9 @@
         </div>
     </header>
 
-
-    <section class="section">
-        <div class="section-block">
-            <div class="row">
+    <div class="header-2 h-0">
+        <div class="header-2-block">
+            <div class="row h-0">
                 <aside class="col-lg-3">
                     <div class="sidebar" data-nav-menu>
                         <nav>
@@ -98,8 +95,15 @@
                             </div>
                         </div>
                     </div>
-                </aside>
-                <div class="col-lg-9">
+                </aside>                
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="section-block">
+            <div class="row">
+                <div class="col-lg-9 offset-lg-3">
                     <h1>Новости</h1>
                     
                     <div class="row align-items-center">
@@ -205,9 +209,33 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <a class="button button_secondary button_large" href="#">Показать еще</a>
+                            <a class="button button_secondary button_large" href="#" data-animate>Показать еще</a>
                         </div>
                     </div>
+
+                </div>
+            </div>
+        </div>
+     
+        <div class="section-block section-block__small-top">
+            <div class="row">
+                <div class="col-lg-9 offset-lg-3">
+                    <nav  class="pagination" aria-label="Page navigation">
+                        <ul class="pagination__list">
+                          <li class="pagination__item"><span class="pagination__link active" href="#">1</span></li>
+                          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                          <li class="pagination__item">
+                            &hellip;
+                          </li>
+                          <li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
+                        </ul>
+                        <div class="pagination__subnav">
+                          <span class="pagination__subnav-link disabled">Предыдущая</span>
+                          &emsp;
+                          <a href="#"  class="pagination__subnav-link">Следующая</a>
+                        </div>
+                      </nav>
 
                 </div>
             </div>

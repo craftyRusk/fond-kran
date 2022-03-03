@@ -25,9 +25,7 @@
 
     <link rel="stylesheet" href="src/css/style.css?v=4">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="src/js/sticky.min.js"></script>
-    <script src="src/js/script.js"></script>
+    <script src="src/js/script.js" defer></script>
 </head>
 
 <body>
@@ -85,10 +83,10 @@
         </div>
     </section>
 
-    <section class="section" id="about" data-navigation-section>
-        <div class="section-block section-block__large-top">
-            <div class="row">
-                <aside class="col-lg-3">
+    <div class="header-2 h-0">
+        <div class="header-2-block">
+            <div class="row h-0">
+                <aside class="col-lg-3">    
                     <div class="sidebar" data-nav-menu>
                         <nav>
                             <ul class="menu">
@@ -147,7 +145,15 @@
                         </div>
                     </div>
                 </aside>
-                <div class="col-lg-9">
+                
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="about" data-navigation-section>
+        <div class="section-block section-block__large-top">
+            <div class="row">                
+                <div class="col-lg-9 offset-lg-3">
                     <h2 class="h1">О&nbsp;фонде</h2>
                     <p class="lead">Каждый год с&nbsp;тысячами детей и&nbsp;молодых людей случаются
                         несчастья или болезни, в&nbsp;результате которых снижается
@@ -243,7 +249,7 @@
                         </div>
 
                         <div class="col-sm-4 text-center">
-                            <a class="button button_secondary button_large" href="/news">Все новости</a>
+                            <a class="button button_secondary button_large" href="/news" data-animate>Все новости</a>
                         </div>
                     </div>
 
@@ -322,7 +328,7 @@
                         </div>
 
                         <div class="col-sm-4 text-center">
-                            <a class="button button_secondary button_large" href="/research">Все исследования</a>
+                            <a class="button button_secondary button_large" href="/research" data-animate>Все исследования</a>
                         </div>
                     </div>
 
@@ -392,7 +398,7 @@
                         <div class="col-sm-4">
                             <article class="m-b-large">
                                 <img class="image" src="src/img/help_hristorozhdenstvenskij.png" alt="Константин
-                                Христорожденственский">
+                                Христорожденственский" loading="lazy">
                                 <h3 class="p text-bold">Константин
                                     Христорожденственский</h3>
                                 <blockquote>Я&nbsp;восхищаюсь теми людьми,
@@ -405,7 +411,7 @@
                             </article>
 
                             <article class="m-b-large">
-                                <img class="image" src="src/img/help_hello.png" alt="Журнал HELLO">
+                                <img class="image" src="src/img/help_hello.png" alt="Журнал HELLO" loading="lazy">
                                 <p>Журнал HELLO, оказывает
                                     мощную инфомационную
                                     поддержку Фонда с
@@ -416,14 +422,14 @@
 
                         <div class="col-sm-4">
                             <article class="m-b-large">
-                                <img class="image" src="src/img/help_ahmad.png" alt="Чай Ахмад">
+                                <img class="image" src="src/img/help_ahmad.png" alt="Чай Ахмад" loading="lazy">
                                 <p>Чай &laquo;Ахмад&raquo; по&nbsp;традиции
                                     предоставляет напитки
                                     на&nbsp;мероприятиях фонда.</p>
                             </article>
 
                             <article class="m-b-large">
-                                <img class="image" src="src/img/help_Kolesnikova.png" alt="Александра Колесникова">
+                                <img class="image" src="src/img/help_Kolesnikova.png" alt="Александра Колесникова" loading="lazy">
                                 <h3 class="p text-bold">Александра Колесникова</h3>
                                 <blockquote>Общение с&nbsp;этими детьми
                                         всегда вызывает массу
@@ -438,7 +444,7 @@
 
                         <div class="col-sm-4">
                             <article class="m-b-large">
-                                <img class="image" src="src/img/help_mihelson.png" alt="Конрад Михельсон">
+                                <img class="image" src="src/img/help_mihelson.png" alt="Конрад Михельсон" loading="lazy">
                                 <h3 class="p text-bold">Конрад Михельсон</h3>
                                 <blockquote>Первая встреча с&nbsp;детьми
                                         изменила и&nbsp;меня саму, и&nbsp;моё
@@ -448,7 +454,7 @@
                             </article>
 
                             <article class="m-b-large">
-                                <img class="image" src="src/img/help_folksvagen.png" alt="Фольксваген Коммерческие автомобили">
+                                <img class="image" src="src/img/help_folksvagen.png" alt="Фольксваген Коммерческие автомобили" loading="lazy">
                                 <p>&laquo;Фольксваген
                                     Коммерческие
                                     автомобили&raquo; всегда

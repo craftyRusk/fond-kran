@@ -3,7 +3,7 @@
     flex-direction: column;
 
     &_main {
-        background-image: url(../img/bg_main.png);
+        background-image: url(../img/bg_main.svg);
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;       
@@ -36,6 +36,10 @@
 
         &__large-top {
             padding-top: calc(var(--module) * 10);
+        }
+
+        &__small-top {
+            padding-top: var(--module);
         }
     }
 

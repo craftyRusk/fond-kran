@@ -1,13 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    dialogOpen();    
-
-    if (window.screen.width >= 991) {
-        const sticky = new Sticky('.sidebar');
-    }
-    
+    dialogOpen();       
     initPageNavigation();
     initMobileMenu();
-    // initScrollAnimations();
+    initScrollAnimations();
 });
 
 function dialogOpen() {

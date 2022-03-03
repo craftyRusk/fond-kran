@@ -104,6 +104,8 @@ dialog.fixed {
 @media screen and (max-width: $screen-phone) {
  dialog {
     padding: calc(var(--module) * 2);
+    max-height: 100%;
+    border-radius: 0;
  }
 }
 

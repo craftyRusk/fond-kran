@@ -2,9 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-:target {
-	scroll-margin-top: var(--header-height);
-}
+// :target {
+// 	scroll-margin-top: var(--header-height);
+// }
 
 // ANIMATION ON SCROLL
 [data-animate] {
@@ -17,19 +17,5 @@ html {
         will-change: transform, opacity;
         transform: translateY(50px);
         opacity: .7;
-    }
-}
-
-@media screen and (max-width: $screen-desktop-large) {}
-
-@media screen and (max-width: $screen-laptop) {
-    :root {
-        --header-height: 85px;
-    }
-}
-
-@media screen and (max-width: $screen-tablet) {
-    :root {
-        --header-height: 60px;
     }
 }

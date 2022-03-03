@@ -25,9 +25,7 @@
 
     <link rel="stylesheet" href="src/css/style.css?v=4">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="src/js/sticky.min.js"></script>
-    <script src="src/js/script.js"></script>
+    <script src="src/js/script.js" defer></script>
 </head>
 
 <body>
@@ -56,10 +54,9 @@
         </div>
     </header>
 
-
-    <section class="section">
-        <div class="section-block">
-            <div class="row">
+    <div class="header-2 h-0">
+        <div class="header-2-block">
+            <div class="row h-0">
                 <aside class="col-lg-3">
                     <div class="sidebar" data-nav-menu>
                         <nav>
@@ -98,8 +95,15 @@
                             </div>
                         </div>
                     </div>
-                </aside>
-                <div class="col-lg-9">
+                </aside>                
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="section-block">
+            <div class="row">
+                <div class="col-lg-9 offset-lg-3">
                     <h1>Заголовок 1</h1>
                     <h2>Заголовок второго уровня</h2>
                     <p class="lead">Высокотехнологичные аппаратные методы повышения уровня внимания, рабочей памяти,
