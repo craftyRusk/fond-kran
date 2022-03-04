@@ -3,7 +3,7 @@
     align-items: center;
     min-height: var(--header-height);
 
-    &-block {        
+    &-block {
         padding: var(--module) var(--section-x-gutter);
         max-width: var(--container-width);
         width: 100%;
@@ -31,21 +31,25 @@
         top: 0;
         z-index: 999;
         /* mix-blend-mode: screen;
-        filter: contrast(1); */
+        filter: contrast(1);*/
 
-        &-block {   
+        &-block {
             padding: calc(var(--module) * 5) 0 0 var(--section-x-gutter);
             max-width: var(--container-width);
             width: 100%;
             margin: 0 auto;
         }
+
+        // a:not(.button) {
+        //     color: gray;
+        // }
     }
 
 }
 
 @media screen and (max-width: $screen-desktop) {
 
-} 
+}
 
 @media screen and (max-width: $screen-laptop) {
     .header {

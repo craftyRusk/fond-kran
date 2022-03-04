@@ -42,8 +42,8 @@ body {
 }
 
 .image {
-    max-width: 100%; 
-    margin-bottom: calc(var(--module) * 2); 
+    max-width: 100%;
+    margin-bottom: calc(var(--module) * 2);
 
     &:last-child {
         margin-bottom: 0;
@@ -60,39 +60,39 @@ body {
 }
 
 a {
-  color: var(--color-black); 
+  color: var(--color-black);
   text-decoration: none;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-.link {          
-    display: inline-block;     
+.link {
+    display: inline-block;
 
     &:hover {
         text-decoration: underline;
     }
 
-    &_secondary {    
+    &_secondary {
         font-size: 24px;
         color: var(--color-product);
     }
 
     &_bg {
-        padding: var(--module) calc(var(--module) * 12) var(--module) calc(var(--module) * 4);  
+        padding: var(--module) calc(var(--module) * 12) var(--module) calc(var(--module) * 4);
         background-image: url(../img/reports.svg);
-        background-size: cover; 
+        background-size: cover;
 
         &:hover {
             opacity: 0.8;
-        }   
-    } 
+        }
+    }
 }
 
 .invert {
     color: var(--color-white);
 }
 
-ymaps[id^="ymaps"] { 
+ymaps[id^="ymaps"] {
     margin-top: calc(var(--module) * 4.5);
     max-width: 100%;
 }
@@ -127,10 +127,6 @@ ymaps[id^="ymaps"] {
     background-size: cover;
 }
 
-// aside a:not(.button) {
-//     color: gray;
-// }
-
 @media screen and (max-width: $screen-tablet) {
     .m-b-small {
         margin-bottom: calc(var(--module) * 2);
@@ -144,11 +140,11 @@ ymaps[id^="ymaps"] {
         &_bg {
             padding: calc(var(--module) * 0.8) calc(var(--module) * 6.4);
         }
-        
-        &_secondary {    
+
+        &_secondary {
             font-size: 20px;
-        }       
-    }   
+        }
+    }
 }
 
 @media screen and (max-width: $screen-phone) {

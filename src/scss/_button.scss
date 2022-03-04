@@ -1,42 +1,42 @@
-.button { 
+.button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: var(--module) calc(var(--module) * 1.5);  
+    padding: var(--module) calc(var(--module) * 1.5);
     border: 1px solid var(--color-black);
     background-color: transparent;
     border-radius: calc(var(--module) * 2.5);
 
     &:hover {
         opacity: 0.8;
-    } 
+    }
 
     &_primary {
-        border: none;         
+        border: none;
         background-color: var(--color-product);
         color: var(--color-white);
     }
 
     &_secondary {
-        border: 2px solid var(--color-product);         
+        border: 2px solid var(--color-product);
         background-color: var(--color-white);
         color: var(--color-white);
-        color: var(--color-product); 
+        color: var(--color-product);
     }
 
     &_white {
-        border: none;         
+        border: none;
         background-color: var(--color-white);
-        color: var(--color-product);    
+        color: var(--color-product);
     }
 
-    &_invert {      
+    &_invert {
         border: 1px solid var(--color-white);
-        color: var(--color-white);    
+        color: var(--color-white);
     }
 
-    &_link {  
+    &_link {
         font-size: 24px;
         color: var(--color-product);
         border: none;
@@ -51,26 +51,26 @@
     }
 
     &_large {
-        padding: calc(var(--module) * 4) calc(var(--module) * 4.5); 
-        font-weight: 700;  
+        padding: calc(var(--module) * 4) calc(var(--module) * 4.5);
+        font-weight: 700;
         border-radius: calc(var(--module) * 5);
 
-        &-x {   
-            padding: calc(var(--module) * 3.5) calc(var(--module) * 4); 
-            font-size: 24px!important;          
+        &-x {
+            padding: calc(var(--module) * 3.5) calc(var(--module) * 4);
+            font-size: 24px!important;
         }
     }
 }
 
 @media screen and (max-width: $screen-phone) {
-    .button { 
+    .button {
         &_large {
             width: 100%;
             font-size: 16px;
-            
-            &-x {   
-                padding: calc(var(--module) * 3.5) calc(var(--module) * 2);       
+
+            &-x {
+                padding: calc(var(--module) * 3.5) calc(var(--module) * 2);
             }
-        } 
+        }
     }
 }

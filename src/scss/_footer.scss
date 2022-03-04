@@ -1,11 +1,11 @@
  .footer {
     background: url(../img/footer.svg) 80% -15%  no-repeat, linear-gradient(to top, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%);
-    
-    &-block {        
+
+    &-block {
         padding: calc(var(--module) * 6) var(--section-x-gutter) calc(var(--module) * 10);
         max-width: var(--container-width);
         width: 100%;
-        margin: 0 auto;        
+        margin: 0 auto;
     }
 
     &__copyright {
@@ -26,7 +26,7 @@
         &-block {
             padding: calc(var(--module) * 3) var(--section-x-gutter) calc(var(--module) * 5);
         }
-    
+
         &__copyright {
             margin-top: calc(var(--module) * 6);
         }

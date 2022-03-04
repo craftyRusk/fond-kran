@@ -6,16 +6,16 @@
         background-image: url(../img/bg_main.svg);
         background-repeat: no-repeat;
         background-position: center top;
-        background-size: cover;       
+        background-size: cover;
         padding-top: calc(var(--module) * 3);
     }
 
-    &_large {        
-        min-height: 650px; 
+    &_large {
+        min-height: 650px;
     }
 
-    &_xlarge {        
-        min-height: 800px; 
+    &_xlarge {
+        min-height: 800px;
     }
 
     &_invert {
@@ -48,12 +48,12 @@
 @media screen and (max-width: $screen-tablet) {
     .section {
 
-        &_large {        
-            min-height: 500px; 
-        }  
+        &_large {
+            min-height: 500px;
+        }
 
-        &_xlarge {        
-            min-height: 650px; 
+        &_xlarge {
+            min-height: 650px;
         }
 
         &-block {
@@ -64,18 +64,18 @@
 @media screen and (max-width: $screen-phone) {
     .section {
 
-        &_large {        
-            min-height: 426px; 
-        } 
-
-        &_xlarge {        
-            min-height: auto; 
+        &_large {
+            min-height: 426px;
         }
-        
+
+        &_xlarge {
+            min-height: auto;
+        }
+
         &_main {
             padding-top: 0;
             background-image: url(../img/bg_main-m.svg);
-        }        
+        }
 
         &_invert {
             background-color: var(--color-black);

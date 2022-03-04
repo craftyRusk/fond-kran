@@ -10,7 +10,7 @@ h1, .h1 {
 
 h2, .h2 {
     font-size: var(--heading-2);
-    font-weight: 700;    
+    font-weight: 700;
     margin: calc(var(--module) * 3) 0;
 
     &:first-child {
@@ -20,7 +20,7 @@ h2, .h2 {
 
 h3, .h3 {
     font-size: var(--heading-3);
-    font-weight: 700;    
+    font-weight: 700;
     margin: calc(var(--module) * 5) 0 var(--module);
 
     &:first-child {
@@ -45,11 +45,11 @@ p, .p {
     
     &:last-child {
         margin-bottom: 0;
-    }  
+    }
 }
 
 blockquote {
-    font-size: var(--font-size); 
+    font-size: var(--font-size);
     font-style: italic;
     margin: 0;
 }
@@ -74,13 +74,13 @@ blockquote {
 
 .quote {
     font-size: 18px;
-    font-weight: 700;     
+    font-weight: 700;
     border-left: 2px solid var(--color-product);
     padding-left: calc(var(--module) * 1.8);
 }
 
 .text-bold {
-    font-weight: 700; 
+    font-weight: 700;
 }
 
 .text-center {
@@ -90,7 +90,7 @@ blockquote {
 @media screen and (max-width: $screen-tablet) {
     .lead {
         font-size: 20px;
-    }  
+    }
 
     .t-xlarge {
         font-size: 24px;

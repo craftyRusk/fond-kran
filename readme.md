@@ -10,4 +10,6 @@
 ## build 4 production
 1. run `npm run build`
 1. encrease version of css-file  
-  `<link rel="stylesheet" href="src/css/style.css?v=4">`
+  `<link rel="stylesheet" href="src/css/style.css?v=1">`
+1. encrease version of js-file  
+  `<script defer src="src/css/style.css?v=1">`

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +22,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="src/css/style.css?v=4">
-    
-    <script src="src/js/script.js" defer></script>
+    <link rel="stylesheet" href="src/css/style.css?v=1">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.5.6/dialog-polyfill.min.js"
+        integrity="sha512-qUIG93zKzcLBVD5RGRbx2PBmbVRu+tJIl+EPLTus0z8I1AMru9sQYdlf6cBacSzYmZVncB9rcc8rYBnazqgrxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="src/js/script.js?v=1" defer></script>
 </head>
 
 <body>
@@ -36,18 +38,19 @@
                     <div class="justify-content-beetwen align-items-center">
                         <a href="/">
                             <img class="header-logo" src="src/img/logo.svg" alt="Фонд КРАН">
-                        </a>                      
+                        </a>
                         <button class="header__burger" aria-label="Меню" data-nav-burger="">
-                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="19" height="1" fill="black"/>
-                                <rect y="7" width="19" height="1" fill="black"/>
-                                <rect y="14" width="19" height="1" fill="black"/>
-                                </svg>
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="19" height="1" fill="black" />
+                                <rect y="7" width="19" height="1" fill="black" />
+                                <rect y="14" width="19" height="1" fill="black" />
+                            </svg>
                         </button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3">
-                    <p class="t-small">Фонд содействия когнетивному развитию и&nbsp;нейрореабилитации</p>                    
+                    <p class="t-small">Фонд содействия когнетивному развитию и&nbsp;нейрореабилитации</p>
                 </div>
             </div>
         </div>
@@ -59,10 +62,10 @@
                 <div class="col-11 col-lg-8 offset-lg-3">
                     <h1>Строим мышление и&nbsp;поднимаем интеллект!</h1>
                     <div class="hidden-md-up">
-                        <div class="m-b-large">                                
+                        <div class="m-b-large">
                             <button type="button" class="button button_invert">Нужна помощь</button>
                         </div>
-                        <div>                                
+                        <div>
                             <button type="button" class="button button_primary">Хочу помочь</button>
                         </div>
                     </div>
@@ -86,7 +89,7 @@
     <div class="header-2 h-0">
         <div class="header-2-block">
             <div class="row h-0">
-                <aside class="col-lg-3">    
+                <aside class="col-lg-3">
                     <div class="sidebar" data-nav-menu>
                         <nav>
                             <ul class="menu">
@@ -99,27 +102,27 @@
                                     <a href="#news" class="menu__link" data-navigation-link>
                                         Новости
                                     </a>
-                                </li>                                
+                                </li>
                                 <li class="menu__item">
                                     <a href="#research" class="menu__link" data-navigation-link>
                                         Исследования
                                     </a>
-                                </li>                                                             
+                                </li>
                                 <li class="menu__item">
                                     <a href="#programm" class="menu__link" data-navigation-link>
                                         Наши программы
                                     </a>
-                                </li>                                                                                         
+                                </li>
                                 <li class="menu__item">
                                     <a href="#volunteers" class="menu__link" data-navigation-link>
                                         Волонтерам
                                     </a>
-                                </li>                                                                                                                           
+                                </li>
                                 <li class="menu__item">
                                     <a href="#help" class="menu__link" data-navigation-link>
                                         Нам помогают
                                     </a>
-                                </li>                                                                                                                  
+                                </li>
                                 <li class="menu__item">
                                     <a href="#contact" class="menu__link" data-navigation-link>
                                         Контакты
@@ -127,8 +130,8 @@
                                 </li>
                             </ul>
                         </nav>
-                        <address class="sidebar-contacts">                            
-                            <div class="m-b-small">  
+                        <address class="sidebar-contacts">
+                            <div class="m-b-small">
                                 <a href="tel:+7 123 456-78-90" class="link text-bold">+7&nbsp;123 456-78-90</a>
                             </div>
                             <div>
@@ -136,23 +139,23 @@
                             </div>
                         </address>
                         <div class="sidebar-buttons">
-                            <div class="m-b-small">                                
+                            <div class="m-b-small">
                                 <button type="button" class="button">Нужна помощь</button>
                             </div>
-                            <div>                                
+                            <div>
                                 <button type="button" class="button button_primary">Хочу помочь</button>
                             </div>
                         </div>
                     </div>
                 </aside>
-                
+
             </div>
         </div>
     </div>
 
     <section class="section" id="about" data-navigation-section>
         <div class="section-block section-block__large-top">
-            <div class="row">                
+            <div class="row">
                 <div class="col-lg-9 offset-lg-3">
                     <h2 class="h1">О&nbsp;фонде</h2>
                     <p class="lead">Каждый год с&nbsp;тысячами детей и&nbsp;молодых людей случаются
@@ -184,7 +187,7 @@
                         </div>
 
                         <div class="col-md-4">
-                            <div class="m-t-large">                                
+                            <div class="m-t-large">
                                 <a href="#" class="link link_secondary link_bg">Отчеты</a>
                             </div>
                         </div>
@@ -278,8 +281,7 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <a class="card card__image" href="#"
-                                style="background-image: url(src/img/research_2.png);">
+                            <a class="card card__image" href="#" style="background-image: url(src/img/research_2.png);">
                                 <div class="card-content">
                                     <p><time>10.02.2022</time></p>
                                     <h4>Исследование в&nbsp;области когнетивного развития и&nbsp;нейрореабили-тации</h4>
@@ -303,8 +305,7 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <a class="card card__image" href="#"
-                                style="background-image: url(src/img/research_4.png);">
+                            <a class="card card__image" href="#" style="background-image: url(src/img/research_4.png);">
                                 <div class="card-content">
                                     <p><time>10.02.2022</time></p>
                                     <h4>Исследование в&nbsp;области когнетивного развития и&nbsp;нейрореабили-тации</h4>
@@ -328,7 +329,8 @@
                         </div>
 
                         <div class="col-sm-4 text-center">
-                            <a class="button button_secondary button_large" href="/research" data-animate>Все исследования</a>
+                            <a class="button button_secondary button_large" href="/research" data-animate>Все
+                                исследования</a>
                         </div>
                     </div>
 
@@ -348,17 +350,21 @@
 
                     <div class="row h-100 m-b-large bg-programm">
                         <div class="col-lg-6">
-                            <div class="m-b-xsmall">         
-                                <button type="button" data-dialog-open="rehab" class="button button_link">Нейропсихологическая реабилитация</button>
+                            <div class="m-b-xsmall">
+                                <button type="button" data-dialog-open="rehab"
+                                    class="button button_link">Нейропсихологическая реабилитация</button>
                             </div>
                             <div class="m-b-xsmall">
-                                <button type="button" data-dialog-open="integration" class="button button_link">Интеграция в&nbsp;социальную среду</button>
+                                <button type="button" data-dialog-open="integration"
+                                    class="button button_link">Интеграция в&nbsp;социальную среду</button>
                             </div>
                             <div class="m-b-xsmall">
-                                <button type="button" data-dialog-open="study" class="button button_link">+1&nbsp;балл к&nbsp;учебе</button>
+                                <button type="button" data-dialog-open="study" class="button button_link">+1&nbsp;балл
+                                    к&nbsp;учебе</button>
                             </div>
                             <div class="m-b-xsmall">
-                                <button type="button" data-dialog-open="methods" class="button button_link">Новые методики повышения интеллекта</button>
+                                <button type="button" data-dialog-open="methods" class="button button_link">Новые
+                                    методики повышения интеллекта</button>
                             </div>
                         </div>
                     </div>
@@ -372,14 +378,14 @@
 
         <div class="section-block section-block__large-top">
             <div class="row">
-                <div class="col-11 col-lg-9 offset-lg-3"> 
-                    <div class="m-b-large">             
+                <div class="col-11 col-lg-9 offset-lg-3">
+                    <div class="m-b-large">
                         <h2 class="h1 m-b-large">Волонтеры </h2>
                         <p class="lead">В&nbsp;нашем фонде уже работают свыше 50&nbsp;человек. Это самые
                             разные люди, которых объединяет одно качество&nbsp;&mdash; они
                             не&nbsp;способны остаться в&nbsp;стороне. И&nbsp;очень радует, что
                             желающих присоединиться к&nbsp;нам становится все больше. </p>
-                    </div>          
+                    </div>
                     <div class="m-t-xxlarge">
                         <a class="button button_white button_large button_large-x" href="#">Стать волонтером</a>
                     </div>
@@ -402,12 +408,12 @@
                                 <h3 class="p text-bold">Константин
                                     Христорожденственский</h3>
                                 <blockquote>Я&nbsp;восхищаюсь теми людьми,
-                                        которые сделали эту работу
-                                        своей профессией,
-                                        и&nbsp;с&nbsp;удовольствием с&nbsp;ними
-                                        сотрудничаю, получая н
-                                        еповторяемые ощущения,
-                                        навыки и&nbsp;знания.</blockquote>
+                                    которые сделали эту работу
+                                    своей профессией,
+                                    и&nbsp;с&nbsp;удовольствием с&nbsp;ними
+                                    сотрудничаю, получая н
+                                    еповторяемые ощущения,
+                                    навыки и&nbsp;знания.</blockquote>
                             </article>
 
                             <article class="m-b-large">
@@ -429,32 +435,35 @@
                             </article>
 
                             <article class="m-b-large">
-                                <img class="image" src="src/img/help_Kolesnikova.png" alt="Александра Колесникова" loading="lazy">
+                                <img class="image" src="src/img/help_Kolesnikova.png" alt="Александра Колесникова"
+                                    loading="lazy">
                                 <h3 class="p text-bold">Александра Колесникова</h3>
                                 <blockquote>Общение с&nbsp;этими детьми
-                                        всегда вызывает массу
-                                        положительных эмоций,
-                                        и&nbsp;каждая встреча является
-                                        особенной! Каждый
-                                        ребенок&nbsp;&mdash; это цветок жизни,
-                                        который нуждается
-                                        в&nbsp;правильном уходе.</blockquote>
+                                    всегда вызывает массу
+                                    положительных эмоций,
+                                    и&nbsp;каждая встреча является
+                                    особенной! Каждый
+                                    ребенок&nbsp;&mdash; это цветок жизни,
+                                    который нуждается
+                                    в&nbsp;правильном уходе.</blockquote>
                             </article>
                         </div>
 
                         <div class="col-sm-4">
                             <article class="m-b-large">
-                                <img class="image" src="src/img/help_mihelson.png" alt="Конрад Михельсон" loading="lazy">
+                                <img class="image" src="src/img/help_mihelson.png" alt="Конрад Михельсон"
+                                    loading="lazy">
                                 <h3 class="p text-bold">Конрад Михельсон</h3>
                                 <blockquote>Первая встреча с&nbsp;детьми
-                                        изменила и&nbsp;меня саму, и&nbsp;моё
-                                        прежнее представление
-                                        о&nbsp;помощи детям, лишённых
-                                        родителей и&nbsp;семьи.</blockquote>
+                                    изменила и&nbsp;меня саму, и&nbsp;моё
+                                    прежнее представление
+                                    о&nbsp;помощи детям, лишённых
+                                    родителей и&nbsp;семьи.</blockquote>
                             </article>
 
                             <article class="m-b-large">
-                                <img class="image" src="src/img/help_folksvagen.png" alt="Фольксваген Коммерческие автомобили" loading="lazy">
+                                <img class="image" src="src/img/help_folksvagen.png"
+                                    alt="Фольксваген Коммерческие автомобили" loading="lazy">
                                 <p>&laquo;Фольксваген
                                     Коммерческие
                                     автомобили&raquo; всегда
@@ -485,12 +494,12 @@
                                 Москва, 123456</address>
                         </div>
                         <div class="col-md-6 offset-lg-2">
-                            <div class="m-t-large"> 
+                            <div class="m-t-large">
                                 <h3>Мы&nbsp;в&nbsp;социальных сетях</h3>
                             </div>
                         </div>
                     </div>
-                
+
                     <div id="map"></div>
 
                 </div>
@@ -502,13 +511,13 @@
         <div class="footer-block">
             <div class="row">
                 <div class="col-lg-4 offset-lg-3">
-                    <div>                        
+                    <div>
                         <a href="#" class="link">Учредители</a>
-                    </div>    
-                    <div class="m-b-medium">     
+                    </div>
+                    <div class="m-b-medium">
                         <a href="#" class="link">Отчетность</a>
                     </div>
-                    <div> 
+                    <div>
                         <a href="#" class="link">Политика конфиденциальности</a>
                     </div>
                 </div>
@@ -523,16 +532,19 @@
     <dialog data-dialog="rehab">
         <form method="dialog" class="dialog-close-form">
             <button type="submit" class="dialog-close-button" aria-label="Close Dialog">
-                <svg width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" role="img">
-                    <path d="M0.939335 10.9393C0.35355 11.5251 0.35355 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939335 10.9393ZM62 10.5L2 10.5V13.5L62 13.5V10.5Z" fill="currentColor"/>
+                <svg width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    focusable="false" role="img">
+                    <path
+                        d="M0.939335 10.9393C0.35355 11.5251 0.35355 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939335 10.9393ZM62 10.5L2 10.5V13.5L62 13.5V10.5Z"
+                        fill="currentColor" />
                 </svg>
-                &emsp;Назад    
+                &emsp;Назад
             </button>
         </form>
-        
+
         <div class="row">
             <div class="col-md-9 offset-md-3">
-                <h2>Нейропсихологическая 
+                <h2>Нейропсихологическая
                     реабилитация</h2>
                 <p class="lead">Высокотехнологичные аппаратные методы повышения уровня внимания, рабочей памяти,
                     управляющих функций. Психологическое репетиторство при академической неуспеваемости. </p>
@@ -563,22 +575,25 @@
                 </div>
 
             </div>
-        </div> 
+        </div>
     </dialog>
 
     <dialog data-dialog="integration">
         <form method="dialog" class="dialog-close-form">
             <button type="submit" class="dialog-close-button" aria-label="Close Dialog">
-                <svg width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" role="img">
-                    <path d="M0.939335 10.9393C0.35355 11.5251 0.35355 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939335 10.9393ZM62 10.5L2 10.5V13.5L62 13.5V10.5Z" fill="currentColor"/>
+                <svg width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    focusable="false" role="img">
+                    <path
+                        d="M0.939335 10.9393C0.35355 11.5251 0.35355 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939335 10.9393ZM62 10.5L2 10.5V13.5L62 13.5V10.5Z"
+                        fill="currentColor" />
                 </svg>
-                &emsp;Назад    
+                &emsp;Назад
             </button>
         </form>
-        
+
         <div class="row">
             <div class="col-md-9 offset-md-3">
-                <h2>Нейропсихологическая 
+                <h2>Нейропсихологическая
                     реабилитация2</h2>
                 <p class="lead">Высокотехнологичные аппаратные методы повышения уровня внимания, рабочей памяти,
                     управляющих функций. Психологическое репетиторство при академической неуспеваемости. </p>
@@ -595,22 +610,25 @@
                 </div>
 
             </div>
-        </div> 
+        </div>
     </dialog>
 
     <dialog data-dialog="study">
         <form method="dialog" class="dialog-close-form">
             <button type="submit" class="dialog-close-button" aria-label="Close Dialog">
-                <svg width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" role="img">
-                    <path d="M0.939335 10.9393C0.35355 11.5251 0.35355 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939335 10.9393ZM62 10.5L2 10.5V13.5L62 13.5V10.5Z" fill="currentColor"/>
+                <svg width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    focusable="false" role="img">
+                    <path
+                        d="M0.939335 10.9393C0.35355 11.5251 0.35355 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939335 10.9393ZM62 10.5L2 10.5V13.5L62 13.5V10.5Z"
+                        fill="currentColor" />
                 </svg>
-                &emsp;Назад    
+                &emsp;Назад
             </button>
         </form>
-        
+
         <div class="row">
             <div class="col-md-9 offset-md-3">
-                <h2>Нейропсихологическая 
+                <h2>Нейропсихологическая
                     реабилитация3</h2>
                 <p class="lead">Высокотехнологичные аппаратные методы повышения уровня внимания, рабочей памяти,
                     управляющих функций. Психологическое репетиторство при академической неуспеваемости. </p>
@@ -626,22 +644,25 @@
                 </div>
 
             </div>
-        </div> 
+        </div>
     </dialog>
 
     <dialog data-dialog="methods">
         <form method="dialog" class="dialog-close-form">
             <button type="submit" class="dialog-close-button" aria-label="Close Dialog">
-                <svg width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" role="img">
-                    <path d="M0.939335 10.9393C0.35355 11.5251 0.35355 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939335 10.9393ZM62 10.5L2 10.5V13.5L62 13.5V10.5Z" fill="currentColor"/>
+                <svg width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    focusable="false" role="img">
+                    <path
+                        d="M0.939335 10.9393C0.35355 11.5251 0.35355 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939335 10.9393ZM62 10.5L2 10.5V13.5L62 13.5V10.5Z"
+                        fill="currentColor" />
                 </svg>
-                &emsp;Назад    
+                &emsp;Назад
             </button>
         </form>
-        
+
         <div class="row">
             <div class="col-md-9 offset-md-3">
-                <h2>Нейропсихологическая 
+                <h2>Нейропсихологическая
                     реабилитация4</h2>
                 <p class="lead">Высокотехнологичные аппаратные методы повышения уровня внимания, рабочей памяти,
                     управляющих функций. Психологическое репетиторство при академической неуспеваемости. </p>
@@ -658,18 +679,8 @@
                 </div>
 
             </div>
-        </div> 
+        </div>
     </dialog>
 
-    <script
-        defer
-        src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.5.6/dialog-polyfill.min.js"
-        integrity="sha512-qUIG93zKzcLBVD5RGRbx2PBmbVRu+tJIl+EPLTus0z8I1AMru9sQYdlf6cBacSzYmZVncB9rcc8rYBnazqgrxA=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    ></script>
-
-
 </body>
-
 </html>
