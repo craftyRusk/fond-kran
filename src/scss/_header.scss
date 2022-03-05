@@ -11,14 +11,17 @@
     }
 
     &__burger {
+        $size: 37px;
         display: none;
-        border: none;
+        margin-top: -5px;
         padding: 0;
-        height: 40px;
-        width: 40px;
+        height: $size;
+        width: $size;
+        border-radius: $size;
         align-items: center;
         justify-content: center;
         background-color: transparent;
+        border: 1px solid black;
         z-index: 1000;
 
         svg {
@@ -40,12 +43,7 @@
         aside {
             padding-top: var(--stycky-menu-top-position);
         }
-
-        // a:not(.button) {
-        //     color: gray;
-        // }
     }
-
 }
 
 @media screen and (max-width: $screen-desktop) {
