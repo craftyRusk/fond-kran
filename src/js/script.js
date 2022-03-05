@@ -11,7 +11,7 @@ function initYaMap() {
     let isMapLoaded = false;
 
     window.addEventListener('scroll', () => {
-        if (isMapLoaded) {
+        if (isMapLoaded || !document.getElementById('map')) {
             return;
         }
 
@@ -93,12 +93,15 @@ function initMobileMenu() {
 }
 
 function initInvertedMenu() {
-    const menu = document.querySelector('[data-nav-menu]');
-    const invertedMenuPlaceholder = document.querySelector('[data-menu-clone]');
-    const clone = menu.cloneNode(true);
-    clone.classList.add('sidebar_invert');
-    clone.classList.add('sidebar_sticky');
-    invertedMenuPlaceholder.appendChild(clone);
+        const menu = document.querySelector('[data-nav-menu]');
+        const invertedMenuPlaceholder = document.querySelector('[data-menu-clone]');
+
+        try {
+            const clone = menu.cloneNode(true);
+            clone.classList.add('sidebar_invert');
+            clone.classList.add('sidebar_sticky');
+            invertedMenuPlaceholder.appendChild(clone);
+        } catch {}
 }
 
 function initScrollAnimations() {
