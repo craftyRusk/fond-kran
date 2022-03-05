@@ -10,6 +10,14 @@
         padding-top: calc(var(--module) * 3);
     }
 
+    &_hero {
+        // crop stycky menu
+        position: relative;
+        -webkit-clip-path: inset(0);
+        clip-path: inset(0);
+        clip: rect(0px, auto, auto, 0px);
+    }
+
     &_large {
         min-height: 650px;
     }

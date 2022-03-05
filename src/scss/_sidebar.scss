@@ -2,6 +2,21 @@
     // margin: calc(var(--module) * 16) 0 0;
     z-index: 100;
 
+    &_invert {
+        * {
+            color: var(--color-white);
+        }
+
+        button:not(.button-primary) {
+            border-color: var(--color-white);
+        }
+    }
+    &_sticky {
+        position: sticky;
+        top: var(--stycky-menu-top-position);
+        margin-bottom: -1000%;
+    }
+
     &-contacts {
         margin: calc(var(--module) * 2.5)  calc(var(--module) * 1.5);
         font-style: normal;

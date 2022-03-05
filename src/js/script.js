@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dialogOpen();       
     initPageNavigation();
     initMobileMenu();
+    initInvertedMenu();
     initScrollAnimations();
 });
 
@@ -92,6 +93,15 @@ function initMobileMenu() {
             setTimeout(() => menu.classList.remove('sidebar_active'), 300);
         });
     });
+}
+
+function initInvertedMenu() {
+    const menu = document.querySelector('[data-nav-menu]');
+    const invertedMenuPlaceholder = document.querySelector('[data-menu-clone]');
+    const clone = menu.cloneNode(true);
+    clone.classList.add('sidebar_invert');
+    clone.classList.add('sidebar_sticky');
+    invertedMenuPlaceholder.appendChild(clone);
 }
 
 function initScrollAnimations() {

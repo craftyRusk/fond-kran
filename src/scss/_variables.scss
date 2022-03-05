@@ -17,6 +17,7 @@ $screen-phone           : 375px;
     --container-width: 1150px;
     --section-x-gutter: calc(var(--module) * 2);
     --header-height: 85px;
+    --stycky-menu-top-position: calc(var(--module) * 7);
 }
 
 @media screen and (max-width: $screen-tablet) {
