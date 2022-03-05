@@ -24,8 +24,17 @@ html {
     box-sizing: border-box;
 }
 
+// https://deploy-preview-15--upbeat-shirley-608546.netlify.app/perfect-ish-font-fallback/?font=Montserrat
+// https://codepen.io/daks01/pen/xxPBGjP
+@font-face {
+    font-family: "Montserrat-fallback";
+    size-adjust: 113.40%;
+    ascent-override: 80%;
+    src: local("Arial");
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Montserrat-fallback', sans-serif;
     font-size: var(--font-size);
     line-height: 1.2;
     margin: 0 auto;
