@@ -33,6 +33,7 @@
 .header-2 {
     position: sticky;
     top: 0;
+    z-index: 1;
 
     &-block {
         padding: 0 0 0 var(--section-x-gutter);
