@@ -21,7 +21,7 @@ h2, .h2 {
 h3, .h3 {
     font-size: var(--heading-3);
     font-weight: 700;
-    margin: calc(var(--module) * 5) 0 var(--module);
+    margin: calc(var(--module) * 5) 0 calc(var(--module) * 2);
 
     &:first-child {
         margin-top: 0;
