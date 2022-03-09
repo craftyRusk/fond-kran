@@ -14,6 +14,10 @@
 
         button:not(.button-primary) {
             border-color: var(--color-white);
+
+            &:hover {
+                border-color: var(--color-black);
+            }
         }
     }
     &_sticky {
