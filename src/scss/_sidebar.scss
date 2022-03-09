@@ -5,7 +5,12 @@
     &_invert {
         * {
             color: var(--color-white);
-        }
+
+            &:hover {
+                color: var(--color-white)!important;
+            }
+
+        }  
 
         button:not(.button-primary) {
             border-color: var(--color-white);
