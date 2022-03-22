@@ -9,7 +9,8 @@
     border-radius: calc(var(--module) * 2.5);
 
     &:hover {
-        opacity: 0.8;
+        background-color: var(--color-black);
+        color: var(--color-white);
     }
 
     &_primary {
@@ -54,6 +55,14 @@
         padding: calc(var(--module) * 4) calc(var(--module) * 4.5);
         font-weight: 700;
         border-radius: calc(var(--module) * 5);
+
+        &:hover {
+            background-color: var(--color-product);
+            color: var(--color-white);
+        }
+        &:active {
+            transform: translateY(2px);
+        }
 
         &-x {
             padding: calc(var(--module) * 3.5) calc(var(--module) * 4);

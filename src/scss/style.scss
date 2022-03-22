@@ -80,7 +80,7 @@ a {
     display: inline-block;
 
     &:hover {
-        text-decoration: underline;
+        color: var(--color-product);
     }
 
     &_secondary {
