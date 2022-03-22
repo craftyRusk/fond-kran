@@ -53,8 +53,8 @@ function initPageNavigation() {
 
     const observerOptions = {
         root: null,
-        rootMargin: '0px 0px -400px',
-        threshold: 0,
+        rootMargin: '-200px',
+        threshold: [0.25, 0.75],
     };
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
